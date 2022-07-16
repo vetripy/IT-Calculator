@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Income Tax Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="static/script.js"></script>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    
+    <body>
+        <div class="wrapper">
+
+            <div class="wrapper-elements head-div">
+                <h1 class="head">Income Tax Calculator</h1>
+            </div>
+
+            <div class="wrapper-elements bottom-div">
+
+                <div class="new-tax-amt-div">
+                    <div class="new-tax-amt-label">New Regime</div>
+                    <div><input class="taxable-amount input-box" placeholder="Enter Gross Total Amount" required></input></div>
+                    <input class="new-tax-amount input-box output" disabled></input>
+                    <div><button class="btn btn-primary calculate" onclick="calculate('new')">Calculate</button></div>
+
+                </div>
+
+                <div class="old-tax-amt-div">
+                    
+                    <div class="old-tax-amt-label">Old Regime</div>
+                    <div><input class="input-box net-taxable-amount" placeholder="Enter Total Taxable Amonut"></input></div>
+                    <div><input class="old-tax-amount input-box output" disabled></input></div>
+                    <div><button class="btn btn-primary calculate" onclick="calculate('old')">Calculate</button></div>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+
+</html>
